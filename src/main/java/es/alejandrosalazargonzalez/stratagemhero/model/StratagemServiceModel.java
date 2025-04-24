@@ -8,7 +8,7 @@ import es.alejandrosalazargonzalez.stratagemhero.model.conexion.Conexion;
 public class StratagemServiceModel extends Conexion {
 
     public StratagemServiceModel() throws SQLException {
-        super("jdbc:sqlite:src/main/resources/stratagemas.db");
+        super("src/main/resources/db/estratagemas.db");
     }
 
     /**

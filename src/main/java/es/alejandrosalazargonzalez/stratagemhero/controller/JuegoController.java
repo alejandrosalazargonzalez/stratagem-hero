@@ -41,13 +41,14 @@ public class JuegoController extends AbstractController implements Initializable
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loadStratagems();
-        setNewStratagem();
         try {
             stratagemService = new StratagemServiceModel();
+            loadStratagems();
+            setNewStratagem();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        
         stratagemIcon.sceneProperty().addListener((obs, oldScene, newScene) -> {
             if (newScene != null) {
                 newScene.addEventFilter(KeyEvent.KEY_PRESSED, this::handleKeyInput);
@@ -62,6 +63,9 @@ public class JuegoController extends AbstractController implements Initializable
         stratagemList = stratagemService.obtenerStratagemas();
     }
 
+    /**
+     * cambia la estratagema actual por una nueva aleatoria
+     */
     private void setNewStratagem() {
         inputIndex = 0;
         if (stratagemList == null || stratagemList.isEmpty()) {
@@ -79,7 +83,7 @@ public class JuegoController extends AbstractController implements Initializable
         sequenceBox.getChildren().clear();
         for (String dir : currentStratagem.getSequence()) {
             ImageView flecha = new ImageView(
-                    new Image(getClass().getResource("/img/arrows/" + dir.toLowerCase() + ".png").toString()));
+                    new Image(getClass().getResource("/img/arrows/" + dir.toLowerCase() + ".jpg").toString()));
             flecha.setFitWidth(40);
             flecha.setFitHeight(40);
             sequenceBox.getChildren().add(flecha);
