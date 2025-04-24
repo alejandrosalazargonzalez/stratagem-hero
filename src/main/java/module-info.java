@@ -4,6 +4,7 @@ module es.alejandrosalazargonzalez.stratagemhero {
     requires transitive java.sql;
     requires transitive org.controlsfx.controls;
     requires javafx.graphics;
+    requires javafx.base;
 
     opens es.alejandrosalazargonzalez.stratagemhero to javafx.fxml;
     exports es.alejandrosalazargonzalez.stratagemhero;

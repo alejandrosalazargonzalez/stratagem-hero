@@ -40,21 +40,6 @@ public class InicioController extends AbstractController {
     @FXML
     private TextField minasField;
 
-    @FXML
-    public void initialize() {
-        dificultadBox.getItems().addAll("Fácil", "Medio", "Difícil", "Personalizada");
-        dificultadBox.setValue("Fácil");
-        onDificultadChange();
-
-    }
-
-    /**
-     * cambia las columnas a las personalizadas
-     */
-    @FXML
-    private void onDificultadChange() {
-
-    }
 
     /**
      * Cambia la pantalla a la partida y configura la dificultad
