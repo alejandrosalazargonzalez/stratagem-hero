@@ -1,0 +1,16 @@
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/TituloController.java
+/home/salazar/stratagem-hero/src/main/java/module-info.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/model/conexion/Conexion.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/model/UsuarioEntity.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/RegistrarController.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/JuegoController.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/RecuperarController.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/LoginController.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/model/StratagemServiceModel.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/abstractas/AbstractController.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/PrincipalApplication.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/InicioController.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/model/Stratagem.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/config/ConfigManager.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/controller/ConfiguracionPartida.java
+/home/salazar/stratagem-hero/src/main/java/es/alejandrosalazargonzalez/stratagemhero/model/UsuarioServiceModel.java
