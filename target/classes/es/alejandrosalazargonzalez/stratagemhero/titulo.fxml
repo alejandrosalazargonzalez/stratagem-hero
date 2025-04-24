@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alejandrosalazargonzalez.stratagemhero.controller.TituloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alejandrosalazargonzalez.stratagemhero.controller.TituloController">
    <children>
-      <ImageView fitHeight="438.0" fitWidth="730.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/stratagemHeroTitulo.jpg" />
-         </image>
-      </ImageView>
-      <Button fx:id="entrarButton" layoutX="8.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tituloToLoginClick" prefHeight="364.0" prefWidth="716.0" styleClass="title" stylesheets="@../../../img/style.css">
+      <Button fx:id="entrarButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tituloToLoginClick" prefHeight="540.0" prefWidth="1040.0" styleClass="title" stylesheets="@../../../img/style.css">
          <font>
             <Font size="24.0" />
          </font>

@@ -14,7 +14,7 @@ public class PrincipalApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("titulo.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 730, 477);
+        Scene scene = new Scene(fxmlLoader.load(), 1040, 540);
         stage.setTitle("Bucaminas!");
         stage.setScene(scene);
         stage.show();

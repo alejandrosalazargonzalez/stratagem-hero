@@ -1,5 +1,6 @@
 .title{
     -fx-background-image: url("stratagemHeroTitulo.jpg");
+    -fx-background-position: center;
+    -fx-background-size:cover;
     -fx-background-color: transparent;
-
 }
