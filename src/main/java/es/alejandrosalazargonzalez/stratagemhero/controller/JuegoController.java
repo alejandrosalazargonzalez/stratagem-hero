@@ -46,8 +46,8 @@ public class JuegoController extends AbstractController implements Initializable
 private Label timerLabel;
 
     private Timeline timer;
-    private double timeLeft = 30.0;
-    private static final double TIME_BONUS = 5.0;
+    private double timeLeft = 10.0;
+    private static final double TIME_BONUS = 2.0;
     private List<Stratagem> stratagemList;
     private Stratagem currentStratagem;
     private int inputIndex = 0;
@@ -99,7 +99,7 @@ private Label timerLabel;
     }
 
     /**
-     * cambia la estratagema actual por una nueva aleatoria
+     * cambia la estratagema actual por una nueva aleatoria y suma el tiempo al contador al completarla
      */
     private void setNewStratagem() {
         inputIndex = 0;
@@ -112,13 +112,25 @@ private Label timerLabel;
         inputProgress.setText("Input: ");
 
         timeLeft += TIME_BONUS;
+        if (timeLeft > 10.0) {
+            timeLeft = 10.0;
+            
+        }
+
         timerLabel.setText(String.format("%.1f", timeLeft));
         
+        establecerIconos();
+    }
+
+    /**
+     * pone los iconos de las estratagemas y las flechas en la interfaz
+     */
+    private void establecerIconos() {
         try {
             String iconName = currentStratagem.getName().replace(" ", "_") + "_Stratagem_Icon.png";
-            URL iconUrl = getClass().getResource("img/icons/" + iconName);
+            URL iconUrl = getClass().getResource("/img/icons/" + iconName);
             if (iconUrl != null) {
-                stratagemIcon.setImage(new Image(getClass().getResource("/img/arrows/" + iconName ).toString()));
+                stratagemIcon.setImage(new Image(getClass().getResource("/img/icons/" + iconName ).toString()));
             } else {
                 System.err.println("No se pudo encontrar el icono: " + iconName.trim());
             }
@@ -135,13 +147,6 @@ private Label timerLabel;
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-    }
-
-    private void stopGame() {
-        if (timer != null) {
-            timer.stop();
-            gameOver = true;
         }
     }
 
@@ -173,11 +178,14 @@ private Label timerLabel;
         cambiarPantalla(atrasButton, "inicio","juego");
     }
 
+    /**
+     * reinicia el juego si se acaba el tiempo
+     */
     @FXML
     public void reiniciarOnClick() {
         if (gameOver) {
             gameOver = false;
-            timeLeft = 30.0;
+            timeLeft = 10.0;
             timerLabel.setText(String.format("%.1f", timeLeft));
             setNewStratagem();
             setupTimer();

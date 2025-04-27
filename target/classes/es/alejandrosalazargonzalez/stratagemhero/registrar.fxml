@@ -3,25 +3,42 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alejandrosalazargonzalez.stratagemhero.controller.RegistrarController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="550.0" styleClass="fondo" stylesheets="@../../../img/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.alejandrosalazargonzalez.stratagemhero.controller.RegistrarController">
    <children>
-      <Text fx:id="userText" layoutX="137.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" wrappingWidth="92.7294921875" />
-      <TextField fx:id="usuarioTextField" layoutX="242.0" layoutY="105.0" promptText="User" />
-      <Text fx:id="emailText1" layoutX="137.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="92.7294921875" />
-      <TextField fx:id="emailTextField1" layoutX="242.0" layoutY="149.0" promptText="User/Email" />
-      <Text fx:id="emailText11" layoutX="137.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir Email:" wrappingWidth="92.7294921875" />
-      <TextField fx:id="emailTextField11" layoutX="242.0" layoutY="193.0" promptText="user/Email" />
-      <Text fx:id="nombreText" layoutX="137.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="92.7294921875" />
-      <TextField fx:id="nombreTextField" layoutX="242.0" layoutY="240.0" promptText="nombre" />
-      <Text fx:id="nivelText1" layoutX="137.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="92.7294921875" />
-      <PasswordField fx:id="passwordField" layoutX="242.0" layoutY="285.0" promptText="Password" />
-      <Text fx:id="nivelText" layoutX="137.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir Password:" wrappingWidth="92.7294921875" />
-      <PasswordField fx:id="passwordField2" layoutX="242.0" layoutY="331.0" promptText="Password" />
-      <Text fx:id="errorText" layoutX="154.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.0" />
-      <Button fx:id="guardarButton" layoutX="175.0" layoutY="419.0" mnemonicParsing="false" onAction="#guardarUsuarioOnClick" prefHeight="24.0" prefWidth="200.0" text="Guardar" />
-      <Button fx:id="regresarButton" layoutX="175.0" layoutY="471.0" mnemonicParsing="false" onAction="#regresarOnClick" prefHeight="24.0" prefWidth="200.0" text="Regresar" />
+      <ImageView fitHeight="453.0" fitWidth="139.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/bannerInicio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="453.0" fitWidth="139.0" layoutX="400.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/bannerInicio.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="userText" fill="WHITE" layoutX="154.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" wrappingWidth="92.7294921875" />
+      <TextField fx:id="usuarioTextField" layoutX="242.0" layoutY="105.0" promptText="User" styleClass="field" />
+      <Text fx:id="emailText1" fill="WHITE" layoutX="154.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="92.7294921875" />
+      <TextField fx:id="emailTextField1" layoutX="242.0" layoutY="149.0" promptText="User/Email" styleClass="field" stylesheets="@../../../img/style.css" />
+      <Text fx:id="emailText11" fill="WHITE" layoutX="154.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir Email:" wrappingWidth="92.7294921875" />
+      <TextField fx:id="emailTextField11" layoutX="242.0" layoutY="193.0" promptText="user/Email" styleClass="field" stylesheets="@../../../img/style.css" />
+      <Text fx:id="nombreText" fill="WHITE" layoutX="154.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="92.7294921875" />
+      <TextField fx:id="nombreTextField" layoutX="242.0" layoutY="240.0" promptText="nombre" styleClass="field" stylesheets="@../../../img/style.css" />
+      <Text fx:id="nivelText1" fill="WHITE" layoutX="154.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="92.7294921875" />
+      <PasswordField fx:id="passwordField" layoutX="242.0" layoutY="285.0" promptText="Password" styleClass="field" stylesheets="@../../../img/style.css" />
+      <Text fx:id="nivelText" fill="WHITE" layoutX="154.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir Password:" wrappingWidth="92.7294921875" />
+      <PasswordField fx:id="passwordField2" layoutX="242.0" layoutY="331.0" promptText="Password" styleClass="field" stylesheets="@../../../img/style.css" />
+      <Text fx:id="errorText" fill="RED" layoutX="154.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.0" />
+      <Button fx:id="guardarButton" layoutX="175.0" layoutY="419.0" mnemonicParsing="false" onAction="#guardarUsuarioOnClick" prefHeight="24.0" prefWidth="200.0" styleClass="boton" stylesheets="@../../../img/style.css" text="Guardar" />
+      <Button fx:id="regresarButton" layoutX="175.0" layoutY="471.0" mnemonicParsing="false" onAction="#regresarOnClick" prefHeight="24.0" prefWidth="200.0" styleClass="boton" stylesheets="@../../../img/style.css" text="Regresar" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/superHelldiver.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
